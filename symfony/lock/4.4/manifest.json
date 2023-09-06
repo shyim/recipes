@@ -5,6 +5,9 @@
     "env": {
         "#1": "Choose one of the stores below",
         "#2": "LOCK_DSN=redis://localhost",
-        "LOCK_DSN": "flock"
-    }
+        "LOCK_DSN": "flock:///%kernel.project_dir%/var/lock"
+    },
+    "gitignore": [
+        "/var/lock"
+    ]
 }
